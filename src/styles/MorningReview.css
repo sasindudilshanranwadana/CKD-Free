@@ -1,0 +1,155 @@
+/* MorningReview.css */
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.morning-review-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  min-height: 100vh;
+  padding: 10px 20px; /* Adjust padding for top and sides */
+  box-sizing: border-box;
+}
+
+.morning-review-card {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 20px; /* Move content higher */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .back-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.morning-review-card h1 {
+  color: #4CAF50;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.morning-review-card form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.morning-review-card label {
+  margin-top: 10px;
+  color: #555;
+  text-align: left;
+  width: 100%;
+}
+
+.morning-review-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d1d1d6;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f2f2f7;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.morning-review-card input:focus {
+  border-color: #2ecc70;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-group button.active {
+  background-color: #000;
+  color: white;
+}
+
+.button-group button:hover {
+  filter: brightness(85%);
+}
+
+.morning-review-card button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-size: 16px;
+}
+
+.morning-review-card button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+  .morning-review-container {
+    padding: 10px 20px; /* Equal padding for left and right */
+  }
+
+  .morning-review-card {
+    border-radius: 0;
+  }
+
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .morning-review-card form {
+    padding: 0 10px;
+  }
+
+  .button-group button {
+    width: auto;
+  }
+}
+
+/* Desktop specific adjustments */
+@media (min-width: 768px) {
+  .morning-review-container {
+    padding: 20px 40px; /* Equal padding for left and right */
+  }
+
+  .morning-review-card {
+    max-width: 600px; /* Centering the card */
+    margin: 0 auto;
+  }
+}

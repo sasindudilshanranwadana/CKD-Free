@@ -1,0 +1,57 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .recent-questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .header .back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .header h1 {
+    flex-grow: 1;
+    text-align: center;
+    color: #4CAF50;
+  }
+  
+  .questions-list {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .question-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .question-item h3 {
+    margin: 0 0 5px;
+    color: #4CAF50;
+  }
+  
+  .question-item p {
+    margin: 0;
+    color: #555;
+  }
+  

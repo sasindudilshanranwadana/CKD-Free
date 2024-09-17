@@ -1,0 +1,161 @@
+.admin-qna-container {
+  padding: 20px;
+}
+
+.admin-qna-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-qna-container input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.admin-qna-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-qna-container table th,
+.admin-qna-container table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-qna-container table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.admin-qna-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-qna-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.view-details-button {
+  background: none;
+  color: #2ecc70;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px; /* Ensure same font size as other text */
+}
+
+.view-details-button:hover {
+  background: none; /* Remove hover background color change */
+  color: #2ecc70; /* Remove hover color change */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.popup-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.popup-content th,
+.popup-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.popup-content th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.popup-content tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.popup-content tr:hover {
+  background-color: #f1f1f1;
+}
+
+.reply-form {
+  margin-top: 20px;
+}
+
+.reply-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+.reply-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reply-form button:hover {
+  background-color: #218838;
+}
+
+@media (min-width: 768px) {
+  .admin-qna-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 200px;
+  }
+}

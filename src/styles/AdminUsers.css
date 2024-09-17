@@ -1,0 +1,70 @@
+.admin-users-container {
+  padding: 20px;
+}
+
+.admin-users-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-users-container input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.admin-users-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-users-container table th,
+.admin-users-container table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-users-container table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.admin-users-container table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-users-container table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.admin-users-container .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.admin-users-container .pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.admin-users-container .pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .admin-users-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: 200px;
+  }
+}

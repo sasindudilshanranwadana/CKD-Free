@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 {
+  font-size: 64px; /* Increased font size */
+  font-weight: 400; /* Removed bold look */
+  color: #1c1c1e;
+  margin: 10px 0 30px 0;
+}
+
+h2 {
+  font-size: 18px;
+  color: #1c1c1e;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: #1c1c1e;
+  margin: 10px 0 30px 0;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #d1d1d6;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #f2f2f7;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+input:focus {
+  border-color: #2ecc70;
+}
+
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #2ecc70;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+button.google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+button.google-signin img {
+  width: 200px;
+  height: auto;
+}
+
+button:hover {
+  background-color: #27b964;
+}
+
+button.google-signin:hover {
+  background-color: #f2f2f7;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+a {
+  color: #2ecc70;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+  .signup-container {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 72px; /* Increased font size */
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  input, button {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  button.google-signin img {
+    width: 200px;
+  }
+
+  p {
+    font-size: 16px; /* Medium size for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .signup-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px; /* Decreased font size for desktop view */
+  }
+
+
+  input, button {
+    font-size: 16px; /* Decreased font size for desktop view */
+    padding: 12px; /* Decreased padding for desktop view */
+  }
+
+  button.google-signin img {
+    width: 180px;
+  }
+
+  p {
+    font-size: 14px; /* Decreased size for desktop view */
+  }
+}
